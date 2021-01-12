@@ -1,9 +1,8 @@
 body {
-    max-width: 1200px;
+    width: 1200px;
     min-width: 800px;
     margin: auto;
-    padding-top: 5%;
-    padding: 10%;
+    padding: 2% 10% 5% 10%;
     font-family: 'proxima-nova', sans-serif;
     line-height: 1.5em;
     background: rgb(24,41,79);
@@ -16,9 +15,9 @@ ul {
 
 a {
     color: white;
-    line-height: 230%;
     text-decoration: none;
     padding: 3.5px;
+    line-height: 2.1em;
     background-color:  #3d3158;
 }
 
