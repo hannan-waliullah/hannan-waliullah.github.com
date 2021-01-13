@@ -1,12 +1,30 @@
 body {
-    width: 1200px;
+    background: linear-gradient(6deg, rgba(24, 41, 79, 1) 12%, rgba(11, 25, 56, 1) 45%, rgba(22, 2, 66, 1) 90%);
+
+}
+
+#container {
+    max-width: 1200px;
     min-width: 800px;
+    padding: 20px;
+
     margin: auto;
-    padding: 2% 10% 5% 10%;
     font-family: 'proxima-nova', sans-serif;
     line-height: 1.5em;
-    background: rgb(24,41,79);
-    background: linear-gradient(6deg, rgba(24,41,79,1) 12%, rgba(11,25,56,1) 45%, rgba(22,2,66,1) 90%);       
+    background: rgb(24, 41, 79);
+    background: linear-gradient(6deg, rgba(24, 41, 79, 1) 12%, rgba(11, 25, 56, 1) 45%, rgba(22, 2, 66, 1) 90%);
+}
+
+h1 {
+    color: white;
+    display: inline-block;
+    background-color: #3d3158;
+    padding: 2% 1% 2% 1%;
+    font-size: 70px;
+}
+
+h2 {
+    color: rgba(251, 227, 131, 1);
 }
 
 ul {
@@ -18,7 +36,7 @@ a {
     text-decoration: none;
     padding: 3.5px;
     line-height: 2.1em;
-    background-color:  #3d3158;
+    background-color: #3d3158;
 }
 
 a:hover {
@@ -27,13 +45,15 @@ a:hover {
 }
 
 footer {
+    max-width: 1200px;
     margin-top: 20px;
     padding-top: 30px;
     padding-left: 80px;
     border-top: 0.5px solid lightgray;
 
 }
-.subhead { 
+
+.subhead {
     animation: animationColor 5s linear both;
 }
 
@@ -43,67 +63,53 @@ footer {
     align-items: center;
     height: 220px;
     transition: height 1s;
-    background: rgb(251,227,131);
-    /* background: linear-gradient(117deg, rgba(251,227,131,1) 12%, rgba(241,159,98,1) 90%); */
+    background: rgb(251, 227, 131);
     border: 4px;
-    border-style: solid ;
-    border-color: rgba(24,41,79,1) ;
+    border-style: solid;
+    border-color: rgba(24, 41, 79, 1);
     animation: colorChange 4s linear infinite alternate;
 
 }
 
-#box1{
+/* below are the boxes for the banner interaction */
+#box1 {
     width: 800px;
     animation-delay: 0s;
-
 }
 
-#box2{
+#box2 {
     width: 693px;
     animation-delay: -0.5s;
-
-
 }
 
-#box3{
+#box3 {
     width: 586px;
     animation-delay: -1s;
-
-
 }
 
-#box4{
+#box4 {
     width: 480px;
     animation-delay: -1.5s;
-
-
 }
 
-#box5{
+#box5 {
     width: 373px;
     animation-delay: -2s;
-
-
 }
 
-#box6{
+#box6 {
     width: 267px;
     animation-delay: -2.5s;
-
-
 }
 
-#box7{
+#box7 {
     width: 160px;
     animation-delay: -3s;
-
-
 }
 
-#box8{
+#box8 {
     width: 53px;
     animation-delay: -3.5s;
-
 }
 
 .box:hover {
@@ -111,26 +117,13 @@ footer {
 }
 
 
-
-h1 {
-    color: white;
-    display:inline-block;
-    background-color:  #3d3158;
-    padding: 2% 1% 2% 1%;
-    font-size: 70px;
-}
-
-h2 {
-    color:rgba(251,227,131,1) ;
-}
-
 .banner {
     display: flex;
     width: 800px;
     height: 250px;
     animation: animationColor 5s linear both;
     align-items: center;
-    
+
 }
 
 .banner:hover {
@@ -140,20 +133,18 @@ h2 {
 
 
 #columns {
-    max-width:  800px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
 
-
 @keyframes colorChange {
     0% {
-        background-color: rgba(251,227,131,1) ;
+        background-color: rgba(251, 227, 131, 1);
     }
 
     100% {
-        background-color: rgba(241,159,98,1)
+        background-color: rgba(241, 159, 98, 1)
     }
 }
