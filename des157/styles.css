@@ -1,4 +1,4 @@
-body {
+body { 
     background: linear-gradient(6deg, rgba(24, 41, 79, 1) 12%, rgba(11, 25, 56, 1) 45%, rgba(22, 2, 66, 1) 90%);
 
 }
@@ -16,15 +16,22 @@ body {
 }
 
 h1 {
-    color: white;
-    display: inline-block;
-    background-color: #3d3158;
-    padding: 2% 1% 2% 1%;
-    font-size: 70px;
+    color: white
 }
 
-h2 {
+#title { 
+    padding: 2% 1% 2% 1%;
+    font-size: 70px;
+    text-align: center;
+}
+
+#subtitle {
+    text-align: center;
+}
+
+h2{
     color: rgba(251, 227, 131, 1);
+
 }
 
 ul {
@@ -34,8 +41,8 @@ ul {
 a {
     color: white;
     text-decoration: none;
-    padding: 3.5px;
-    line-height: 2.1em;
+    padding: 5px;
+    line-height: 2.5em;
     background-color: #3d3158;
 }
 
@@ -50,6 +57,7 @@ footer {
     padding-top: 30px;
     padding-left: 80px;
     border-top: 0.5px solid lightgray;
+    text-align: center;
 
 }
 
@@ -119,10 +127,12 @@ footer {
 
 .banner {
     display: flex;
+    margin: auto;
     width: 800px;
     height: 250px;
     animation: animationColor 5s linear both;
     align-items: center;
+    padding: 5% 0% 3% 0%;
 
 }
 
@@ -133,6 +143,8 @@ footer {
 
 
 #columns {
+    margin:auto
+    width: 1000px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
