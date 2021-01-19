@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM experiment</title>
+    <style>
+        
+        #colorbox {
+          background-color: black; 
+          width: 800px;
+          height: 400px;
+          border-style: solid;
+          border-color: gray;
+          border-width: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>DOM experiment</h1> 
+    <h2> choose colors to change the page background </h2>
+    <labeL><input type='checkbox' onclick="clickRed(colors)"> red</labeL>
+    <labeL><input type='checkbox' onclick="clickBlue(colors)"> blue </labeL>
+    <labeL><input type='checkbox' onclick="clickYellow(colors)"> yellow </labeL>
+    <div id="colorbox"> </div>
+
+    <script>
+
+        function initialColor() {
+            var initColor = prompt("red, blue, or yellow", "none");
+
+            var colors = [0,0,0]; //colors[0] = red, colors[1] = blue, colors[2] = yellow; 
+            var box = document.querySelector("#colorbox");
+            var checkboxes = document.querySelectorAll("input");
+
+            // keep prompting until color is entered
+            while (initColor != "red" && initColor != "blue" && initColor != "yellow" ) {
+                initColor = prompt("error! please choose red, blue, or yellow", "none" );
+            } 
+
+            if (initColor === "red") {
+                box.style.backgroundColor = "darkred";
+                checkboxes[0].setAttribute ('checked', 'checked')
+                colors[0] = 1;
+
+            } else if (initColor === "blue") {
+                box.style.backgroundColor = "blue";
+                checkboxes[1].setAttribute ('checked', 'checked')
+                colors[1] = 1;
+
+            } else {
+                box.style.backgroundColor = "yellow";
+                checkboxes[2].setAttribute ('checked', 'checked')
+                colors[2] = 1;
+            }
+
+            return colors;
+   
+        }
+
+        function changeColor (colors) {
+            var box = document.querySelector("#colorbox");
+            console.log(colors);
+            if (colors[0]== 1 && colors[1] == 0 && colors[2]== 0) {
+                box.style.backgroundColor = "darkred";
+            } else if (colors[0]== 0 && colors[1] == 1 && colors[2]== 0) { 
+                box.style.backgroundColor = "blue";
+            } else if (colors[0]== 0 && colors[1] == 0 && colors[2]== 1) { 
+                box.style.backgroundColor = "yellow";
+            }else if (colors[0]== 1 && colors[1] == 1 && colors[2]== 0) { 
+                console.log("purple");
+                box.style.backgroundColor = "purple";
+            }else if (colors[0]== 0 && colors[1] == 1 && colors[2]== 1) { 
+                console.log("green");
+                box.style.backgroundColor = "green";
+            }else if (colors[0]== 1 && colors[1] == 0 && colors[2]== 1) { 
+                box.style.backgroundColor = "orange";
+            }else if (colors[0]== 1 && colors[1] == 1 && colors[2]== 1) { 
+                box.style.backgroundColor = "black";
+            } else {
+                console.log("white");
+                box.style.backgroundColor = "white";
+            }
+            
+        }
+
+        function clickRed (colors) {
+            colors[0] = (colors[0] + 1) % 2;
+            changeColor(colors);
+            return colors;
+        }
+
+        function clickBlue (colors) {
+            colors[1] = (colors[1] + 1) % 2;
+            changeColor(colors);
+            return colors;
+
+        }
+
+        function clickYellow (colors) {
+            colors[2] = (colors[2] + 1) % 2;
+            changeColor(colors);
+            return colors;
+        }
+
+
+
+
+
+
+
+        colors = initialColor();
+
+
+    </script>
+
+</body>
+</html>

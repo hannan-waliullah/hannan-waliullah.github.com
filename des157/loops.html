@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loop Examples</title>
+</head>
+<body>
+    <h1>Loops in JavaScript</h1>
+
+    <script>
+        // for (var i = 0; i < 10; i++) {
+        //     console.log('the value of ' + i);
+        // }
+
+        // for (var i = 1; i < 101; i++) {
+        //     console.log(i)
+        // }
+
+        var colors = ['red', 'blue', 'green', 'yellow'];
+
+        // for (var i = 0; i < colors.length; i++) {
+        //     console.log(colors[i]);
+        // }
+
+        // for (var eachColor of colors) {
+        //     console.log(eachColor);
+        // }
+
+        var myString = "here is a string of characters";
+
+        // for (var i = 0; i < myString.length; i++ ) { 
+        //     console.log(myString[i]);
+        // }
+
+        // for (var eachChar of myString) {
+        //     console.log(eachChar);
+        // }
+
+        var incrementor = 0;
+        var text = "";
+
+        // while (incrementor < 10) {
+        //     text += "The incrementor has gone up to " + incrementor;
+        //     incrementor++;
+        // }
+
+        // while (incrementor < 10) {
+        //     text += `The value of incrementor is ${incrementor} \n`
+        //     incrementor++;
+        // }
+
+        // var link = `<a href" ${sompage.html}">Go to the ${variablepage}</a>`
+
+        var i = 0;
+        var text = "";
+        
+        while (i < 10) {
+            text += `The incrementor is ${i}, and squared it is ${i * i } \n`;
+            i++;
+        }
+
+
+
+
+        console.log(text);
+
+    </script>
+</body>
+</html>

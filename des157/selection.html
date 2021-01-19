@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Examples in JS</title>
+</head>
+<body>
+
+    <h1>Selection Examples in JS</h1>
+
+    <script>
+        var red = true;
+        var blue = false;
+        var green;
+        var myNum = 5;
+        var myOtherNum = 4;
+        var notaNum = '5';
+        var animal = 'chicken';
+        var myValue = myNum - animal;
+
+        var colors = ['red', 'blue', 'green', 'yellow'];
+        var colorSelect = colors[3];
+
+        var goodMood = true; 
+        var gotSleep = 0;
+        var gotBreakfast = true;
+        var gotLunch = true;
+        var gotDinner = true;
+
+
+        // console.log(myValue);
+
+        // if(myNum === notaNum){
+        //     console.log("this is true");
+        // } else {
+        //     console.log("this is false");
+        // }
+        
+        // if (colorSelect === 'red') {
+        //     console.log("you have selected red")
+        // } else if (colorSelect === 'blue') {
+        //     console.log("you have selected blue")
+        // } else if (colorSelect === 'green') {
+        //     console.log("you have selected red")
+        // } else {
+        //     console.log("you have selected yellow")
+        // }
+        
+        // if (goodMood && gotSleep) {
+        //     console.log("I'm having a good day");
+        // } else {
+        //     console.log("I'm grumpy");
+        // }
+
+        // if ( gotBreakfast || gotLunch || gotDinner) {
+        //     console.log("I'm not too hungry");
+        // } else {
+        //     console.log("I'm starving!!1");
+        // }
+        
+        switch(colorSelect) {
+            case "red" : console.log("you picked red"); break;
+            case "blue" : console.log("you picked blue"); break;
+            case "green" : console.log("you picked green"); break;
+            case "yellow" : console.log("you picked yellow"); break;
+            default: console.log("There was an error"); break;
+        }
+
+    </script>
+
+</body>
+</html>
