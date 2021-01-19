@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM experiment</title>
-    <link href="styles.css" rel="stylesheet">
 
     <style>
-        
+        #container {
+           margin:auto; 
+           max-width: 800px;
+        }
+
         #colorbox {
           background-color: black; 
           width: 800px;
@@ -17,14 +20,16 @@
           border-width: 5px;
         }
 
-        h1,h2 {
+        h1,h2, label {
             font-family: 'proxima-nova', sans-serif;: proxima
         }
+        
+    
         
 
     </style>
 </head>
-<body>
+<body id="container">
     <h1>DOM experiment</h1> 
     <h2> choose colors to change the page background </h2>
     <labeL><input type='checkbox' onclick="clickRed(colors)"> red</labeL>
