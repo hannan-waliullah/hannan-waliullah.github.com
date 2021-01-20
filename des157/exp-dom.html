@@ -21,7 +21,7 @@
         }
 
         h1,h2, label {
-            font-family: 'proxima-nova', sans-serif;: proxima
+            font-family: 'proxima-nova', sans-serif;
         }
         
     
@@ -38,7 +38,13 @@
     <div id="colorbox"> </div>
 
     <script>
+        /* script changes color based on what colors are selected
+        note: color data is stored in an array, 
+        colors[0] = red; colors[1] = blue; colors[3] = yellow;
+        colors[x]= 0 means unchecked, colors[x] = 1 means checked; 
+        */ 
 
+        /* function chooses initial color based on user prompt input */
         function initialColor() {
             var initColor = prompt("red, blue, or yellow", "none");
 
@@ -71,6 +77,8 @@
    
         }
 
+
+        /* changes color of the box based on new colors checked */
         function changeColor (colors) {
             var box = document.querySelector("#colorbox");
             console.log(colors);
@@ -97,6 +105,7 @@
             
         }
 
+        /* based on button click updates the colors array*/ 
         function clickRed (colors) {
             colors[0] = (colors[0] + 1) % 2;
             changeColor(colors);
