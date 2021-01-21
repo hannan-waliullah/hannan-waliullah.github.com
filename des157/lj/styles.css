@@ -1,0 +1,84 @@
+body {
+    max-width: 900px;
+    margin: auto;
+    font-family: 'proxima-nova', sans-serif;
+    padding: 100px 20% 2% 20%;
+}
+
+footer {
+    margin:auto;
+    margin-top: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+footer a {
+    padding: 10px;
+}
+
+.date {
+    font-weight: 100;
+    font-style: italic;
+    color:rgb(90, 90, 90);
+}
+
+a {
+    background-color:  #7153b8; 
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    padding:  8px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    background-color: rgb(224, 224, 224);
+    color: #7153b8;
+}
+
+.response { 
+    padding: 60px 0px 60px 0px;
+}
+
+.journaltext { 
+
+    font-family: linotype-sabon, sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.5;
+    margin: 25px 0;
+    color: rgb(59, 59, 59);
+}
+
+h1 { 
+    font-family: linotype-sabon, sans-serif;
+    color: rgb(59, 59, 59);
+    font-size: 60px;  
+}
+
+h2 {
+    color: rgb(59, 59, 59);
+    font-size: 40px;
+    line-height: 45px;
+    margin: 0px; 
+    color: #26007e
+    
+}
+
+
+
+hr{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#more{
+    font-size: 40px;
+    font-family: linotype-sabon, sans-serif;
+    padding-top: 30px;
+    line-height: 10px;
+}
+

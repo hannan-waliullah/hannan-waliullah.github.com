@@ -62,6 +62,10 @@ footer {
 
 }
 
+.date {
+    font-weight: 600;
+}
+
 .subhead {
     animation: animationColor 5s linear both;
 }
