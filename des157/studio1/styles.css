@@ -1,0 +1,142 @@
+
+main {
+    position: relative;
+    width: 1366px;
+    height: 768px;
+    margin: auto;
+    margin-top: 70px;
+    background: #F6C07E;
+    background-image: url("images/background.svg");
+
+    overflow:scroll;
+    
+}
+
+
+/* background elements in the madlib page */
+
+
+/* wave elements */ 
+.waves {
+    position: absolute;
+    bottom: 0%;
+    width: 102%;
+    object-fit: contain;
+
+    filter: drop-shadow(1px -1px 3px rgba(0, 0, 0, 0.25));
+    animation: wavemove 3s infinite; 
+}
+
+#wave-bottom{
+    animation-delay: -1s;
+}
+
+#wave-mid{
+    animation-delay: -2s;
+}
+
+#wave-top {
+    animation-delay: 0s;
+}
+
+
+@keyframes wavemove {
+    0% {left: 0px}
+    50%{left: -10px}
+    100%{left: 0px}
+}
+
+
+/* submarine */ 
+#submarine {
+    position: absolute;
+    width: 369.74px;
+    height: 263.12px;
+    left: 134.25px;
+    top: 294.99px;
+    filter: drop-shadow(1px -1px 3px rgba(0, 0, 0, 0.25));
+    animation: subfloat 6s linear infinite;
+
+}
+
+@keyframes subfloat {
+    0% { transform: translate(0px, 0px) rotate(-2deg) ;}
+    50%{ transform: translate(10px, 10px) rotate(2deg) ;}
+    100%{ transform: translate(-0px, -0px) rotate(-2deg) ;}
+}
+
+
+
+
+
+
+/* 
+
+label,input {
+    display:block;
+}
+
+input{
+    margin-bottom:20px;
+}
+
+fieldset input, fieldset label {
+    display: inline;
+}
+
+fieldset label {
+    margin-bottom: 20px;
+} */
+
+
+/* classes */
+
+
+
+/* ids */ 
+/* #formcontainer { 
+    position: absolute;
+    width: 482px;
+    height: 503px;
+    left: 701.62px;
+    top: 209.62px;
+    
+    background: #EBDCCD;
+    border-radius: 20px;
+
+}
+
+#background {
+    position: relative;
+    width: 1366px;
+    height: 768px;
+    
+    background: #FFFFFF;
+    background: #F6C07E;
+}
+#maintitle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    width: 809px;
+    height: 105px;
+    left: 122px;
+    top: 75px;
+    
+    background: #0B1E32;
+    border-radius: 17px;
+}
+
+h1{
+  
+    margin: auto;
+
+    font-family: Rockwell;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 70px;
+
+    color: #EBDCCD;
+} */
