@@ -1,18 +1,18 @@
 
 /* theres a lot of css so just a quick explanation of how everythings organized
- * there are three main sections: the heading, the background + animations, and the form 
-    * heading 
+ * there are three main sections: the heading, the background + animations, and the form
+    * heading
         * h1 & container styling
     * background
         * 3 waves and their animation
         * submarine and its animation
-    * the form 
+    * the form
         * form container
-        * the intro text 
+        * the intro text
         * all stuff on the form
 
  * we also have the overlay styling
-    *to be updated 
+    *to be updated
 */
 
 
@@ -29,26 +29,54 @@ main {
     margin-top: 70px;
     background: #F6C07E;
     background-image: url("images/background.svg");
-    overflow:scroll;
+    overflow:hidden;
 }
 
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    height: 45px;
+    width: 1366px;
+    left: 0px;
+    top: 727px;
+    background-color:rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+a {
+    color: white;
+    font-family: Proxima Nova;
+    font-size: 11px ;
+    font-style: 800;
+    font-weight: normal;
+    height: 13px;
+    padding: 6px;
+    margin: 0px 6px 2px 6px;
+    text-decoration: none; 
+    background-color: #000f2c;
+    border-radius: 10px;
+ }
+ 
 /* header styling */
 header {
     position: absolute;
-    display:flex;
-    align-items: center;
 
     width: 788px;
     height: 106px;
     left: 120px;
     top: 80px;
+    margin-left:auto;
+    margin-right:auto;
+
 
     background: #0B1E32;
     border-radius: 20px;
 }
 
-h1 { 
+h1 {
     margin:auto;
     text-align: center;
     font-size: 72px;
@@ -62,12 +90,12 @@ h1 {
     color: #EBDCCD;
 }
 
-/* background elements in the madlib page 
+/* background elements in the madlib page
     * wave elements + animation
-    * submarine + animation 
+    * submarine + animation
 */
 
-/* wave elements */ 
+/* wave elements */
 .waves {
     position: absolute;
     bottom: 0%;
@@ -75,7 +103,7 @@ h1 {
     object-fit: contain;
 
     filter: drop-shadow(1px -1px 3px rgba(0, 0, 0, 0.25));
-    animation: wavemove 3s infinite; 
+    animation: wavemove 5s infinite;
 }
 
 #wave-bottom{
@@ -98,7 +126,7 @@ h1 {
 }
 
 
-/* submarine */ 
+/* submarine */
 #submarine {
     position: absolute;
     width: 369.74px;
@@ -117,19 +145,19 @@ h1 {
 }
 
 
-/* form styling */ 
-#formcontainer { 
+/* form styling */
+#formcontainer {
     position: absolute;
     width: 300px;
     height: 425px;
     left: 750px;
-    top: 220px;
+    top: 210px;
 
     background: #EBDCCD;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-    padding: 27.5px 60px 35px 60px;
+
+    padding: 27.5px 27px 35px 60px;
 
     /* font styling for everything except heading */
     font-family: Proxima Nova;
@@ -151,15 +179,15 @@ h2 {
     color: #0B1E32;
 }
 
-
 label,input {
-    display:block;
+    display:inline-block;
 }
 
+
+
 input{
-    margin-bottom:18px;
-    width: 128px;
-    height: 30px;
+    margin-bottom:25px;
+    height: 28px;
     background-color: #3C5FA3;
     color: white;
 
@@ -170,54 +198,178 @@ input{
     outline: none;
 
 
-    /*input fonts */ 
+    /*input fonts */
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 1px;
-    
+
     /* add a shadow to make it clear */
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
- 
+
 }
 
 input:focus {
     background-color:#46A6BE;
 }
 
-label { 
+label {
     font-style: italic;
+    margin-right: 10px;
+    text-align: left;
+    width: 120px;
 }
 
 #submitbutton {
     background-color: #46A6BE;
-    margin: auto;
+    margin-left: 70px;
 
     height: 40px;
     width: auto;
-    padding: 5px 15px 1px 15px;
+    padding: 10px 15px 1px 15px;
     font-family: Rockwell;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
     line-height: 25px;
 
+    cursor:pointer;
+
+
     color: #EBDCCD;
 
 }
 
-#submitbutton:active{ 
+#submitbutton:active{
     background-color: #3C5FA3;
 
 }
-/* fieldset input, fieldset label {
-    display: inline;
+
+
+.hidden{
+    display: none;
 }
 
-fieldset label {
-    margin-bottom: 20px;
-}  */
+.showing{
+    display: block;
+}
+
+#overlay {
+    position: absolute;
+    background-color: #00091b;
+    top: 0;
+    left: 0;
+    width: 1366px;
+    height: 768px;
+    animation: oceancolor 8s ease-in-out;
+    overflow:hidden;
+    line-height: 3em;
+
+    /* transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease; */
+}
+
+#submarineov {
+    position: absolute;
+    width: 1300.74px;
+    height: auto;
+    left: 80px;
+    top: 294.99px;
+    filter: drop-shadow(1px -1px 3px rgba(0, 0, 0, 0.25));
+    animation: subdive 20s linear;
+
+}
 
 
+@keyframes subdive {
+    0% { transform: translate(-500px, -400px) rotate(90deg) ;}
+    10%{ transform: translate(0px, 0px) rotate(45deg) ;}
+    20%{ transform: translate(4px, 4px) rotate(30deg); }
+    30%{ transform: translate(0px, 0px) rotate(45deg); }
+    40%{ transform: translate(4px, 4px) rotate(30deg); }
+    50%{ transform: translate(0px, 0px) rotate(45deg); }
+    60%{ transform: translate(4px, 4px) rotate(30deg); }
+    70%{ transform: translate(0px, 0px) rotate(45deg); }
+    80%{ transform: translate(4px, 4px) rotate(30deg); }
+    90%{ transform: translate(0px, 0px) rotate(45deg); }
+    100%{ transform: translate(4px, 4px) rotate(30deg); }
+}
+
+@keyframes oceancolor{
+    0% {background-color: #3C5FA3;}
+    100% {background-color: #00091b;}
+}
+
+#storycontainer{
+    position: absolute;
+    width: 800px;
+    height: 425px;
+    left: 650px;
+    top: 220px;
+    overflow: hidden;
+
+    /*padding: 27.5px 60px 35px 60px; */
+
+    /* font styling for everything except heading */
+    font-family: Proxima Nova;
+    font-style: normal;
+
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 19px;
+
+    color: #ffffff;
+}
+
+#mask {
+  position: absolute;
+  width: 800px;
+  height: 200px;
+  left: 650px;
+  top: 220px;
+  background-color: #00091b;
+
+  animation: unmasktext 8s forwards ease-in-out;
+
+}
+
+
+#resetbtn {
+
+    position: absolute;
+    left: 650px;
+    top: 400px;
+
+    background-color: #83a8f100;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+
+    height: 40px;
+    width: auto;
+    padding: 10px 15px 1px 15px;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 25px;
+    cursor:pointer;
+
+
+
+    color: #EBDCCD;
+    border-radius: 17px;
+}
+
+@keyframes unmasktext{
+  0% {background-color: #3C5FA3; transform: translate(0px,50px);}
+  30% {transform: translate(0px,50px);} /*line one*/
+  33% {transform: translate(0px,80px);} /* line two */
+  63% {transform: translate(0px,80px);}
+  66% {transform: translate(0px,120px);} /* line three */
+  97% {transform: translate(0px,120px);}
+  100% {background-color: #00091b; transform: translate(0px, 160px);} /* line four */
+}

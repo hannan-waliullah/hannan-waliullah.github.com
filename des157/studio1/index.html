@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build Mad Lib Script</title>
+    <title>Studio 1: MadLibs</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ozx8iqj.css">
     <link rel="stylesheet" href="styles.css">
@@ -17,7 +17,7 @@
             <h1>Deep Sea Adventure!</h1>
         </header>
 
-        <section id="animations"> 
+        <section id="animations">
             <!--waves-->
             <img src="images/wave-bottom.svg" alt="wave1" class="waves" id="wave-bottom">
             <img src="images/wave-middle.svg" alt="wave2" class="waves" id="wave-mid">
@@ -27,62 +27,52 @@
 
         <section id="formcontainer">
             <h2>instructions</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh euismod .</p>
+            <p>Fill in all of the blanks below to go on an deep sea diving adventure!</p>
 
 
             <form id="myForm">
-                <label for="noun1">Provide a Noun</label>
-                <input type="text" id="noun1">
 
-                <label for="noun1">Provide a Noun</label>
-                <input type="text" id="noun2">
 
-                <label for="noun1">Provide a Noun</label>
-                <input type="text" id="adj">
+                        <label for="randName">Random name</label>
+                        <input type="text" id="randName">
 
-                <label for="noun1">Provide a Noun</label>
-                <input type="text" id="verb">
+                        <label for="country">Country</label>
+                        <input type="text" id="country">
+
+                        <label for="timelen">Length of time</label>
+                        <input type="text" id="timelen">
+
+                        <label for="randObj">Random Object</label>
+                        <input type="text" id="randObj">
+
+                        <label for="emotion">Emotion</label>
+                        <input type="text" id="noun1">
+
+
 
                 <input type="submit" value="Let's go!"  id="submitbutton">
-            </form>  
+            </form>
 
-            
+
         </section>
 
 
-    </main>
-    <!-- <main>
-        
-        <section id="formcontainer"> 
 
-            <h2 id="instructions">instructions</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-            sed diam nonummy nibh euismod 
-            </p>
+        <section id="overlay" class="hidden">
+            <section id="storycontainer"></section>
+            <div id="mask"> </div>
+            <img src="images/submarine2.svg" alt="submarine" id="submarineov">
+            <button id="resetbtn">Again?</button>
 
-            <form id="myForm">
-                <label for="noun1">Provide a Noun</label>
-                <input type="text" id="noun1">
 
-                <label for="noun1">Provide a Noun</label>
-                <input type="text" id="noun2">
 
-                <label for="noun1">Provide a Noun</label>
-                <input type="text" id="adj">
+        </section>
 
-                <label for="noun1">Provide a Noun</label>
-                <input type="text" id="verb">
 
-                <input type="submit" value="send">
-            </form>  
-        </section> 
-        
-        <article id="madlib">
-
-        </article>
-    </main> -->
     <footer>
+        <a href="https://validator.w3.org/check?uri=referer">VALID HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">VALID CSS</a>
     </footer>
+    </main>
 </body>
 </html>
