@@ -10,9 +10,12 @@
         * form container
         * the intro text
         * all stuff on the form
-
- * we also have the overlay styling
-    *to be updated
+    * overlay styling
+        * sub animation
+        * story
+        * reset button
+    * footer 
+   
 */
 
 
@@ -151,6 +154,7 @@ h1 {
     height: 425px;
     left: 750px;
     top: 210px;
+    float: left;
 
     background: #EBDCCD;
     border-radius: 20px;
@@ -179,7 +183,9 @@ h2 {
 }
 
 label,input {
-    display:inline-block;
+    float: left;    
+    position: relative;
+    display: inline;
 }
 
 
@@ -246,6 +252,8 @@ label {
 
 }
 
+
+/* STYLING FOR OVERLAY */
 
 .hidden{
     display: none;
@@ -335,7 +343,6 @@ label {
 
 }
 
-
 #resetbtn {
 
     position: absolute;
@@ -356,8 +363,6 @@ label {
     font-size: 21px;
     line-height: 25px;
     cursor:pointer;
-
-
 
     color: #EBDCCD;
     border-radius: 17px;
