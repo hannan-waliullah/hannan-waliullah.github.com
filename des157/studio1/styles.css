@@ -103,15 +103,15 @@ h1 {
     object-fit: contain;
 
     filter: drop-shadow(1px -1px 3px rgba(0, 0, 0, 0.25));
-    animation: wavemove 5s infinite;
+    animation: wavemove 3s infinite;
 }
 
 #wave-bottom{
-    animation-delay: -1s;
+    animation-delay: -0.5s;
 }
 
 #wave-mid{
-    animation-delay: -2s;
+    animation-delay: -1s;
 }
 
 #wave-top {
