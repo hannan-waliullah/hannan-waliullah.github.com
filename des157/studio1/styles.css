@@ -48,7 +48,7 @@ footer {
 
 a {
     color: white;
-    font-family: Proxima Nova;
+    font-family: "Proxima Nova";
     font-size: 11px ;
     font-weight: normal;
     height: 13px;
@@ -159,7 +159,7 @@ h1 {
     padding: 27.5px 27px 35px 60px;
 
     /* font styling for everything except heading */
-    font-family: Proxima Nova;
+    font-family: "Proxima Nova";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -198,7 +198,7 @@ input{
 
 
     /*input fonts */
-    font-family: Proxima Nova;
+    font-family: "Proxima Nova";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -313,7 +313,7 @@ label {
     /*padding: 27.5px 60px 35px 60px; */
 
     /* font styling for everything except heading */
-    font-family: Proxima Nova;
+    font-family: "Proxima Nova";
     font-style: normal;
 
     font-weight: 500;
