@@ -241,12 +241,13 @@ label {
     line-height: 25px;
 
     cursor:pointer;
-
-
     color: #EBDCCD;
 
 }
 
+#submitbutton:hover {
+    background-color: #3C5FA3 ;
+}
 #submitbutton:active{
     background-color: #3C5FA3;
 
@@ -366,6 +367,11 @@ label {
 
     color: #EBDCCD;
     border-radius: 17px;
+}
+
+#resetbtn:hover {
+    color: #83a8f1c5;
+    background-color:white ;
 }
 
 @keyframes unmasktext{
