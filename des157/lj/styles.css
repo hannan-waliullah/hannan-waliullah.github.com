@@ -34,6 +34,29 @@ a {
     letter-spacing: 1px;
 }
 
+img { 
+    padding-top: 30px;
+
+    filter: drop-shadow(0 0 0.2rem rgb(92, 92, 92));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+figcaption {
+    padding-top: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: rgb(177, 177, 177);
+
+}
+
 a:hover {
     background-color: rgb(224, 224, 224);
     color: #7153b8;
