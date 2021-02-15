@@ -1,0 +1,191 @@
+
+/* css styling for main content */ 
+
+
+main { 
+    background-color: white;
+    height: 100vh;
+    width: 30vw;
+    position: fixed;
+
+
+    /* snap scrolling settings for a smoother ux */
+    overflow: scroll;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: mandatory;
+}
+
+
+main section { 
+    position: relative;
+    height: 90vh;
+    padding: 100px 70px 0px 70px;
+    scroll-snap-align: start;
+}
+
+.cookietext div{
+    position: absolute;
+    bottom: 10%;
+    left: calc(50% - 75px);
+
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 141.3%;
+}
+
+
+
+.mainmenubutton {
+    width: 140px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 35px;
+    border-radius: 30px;
+    border: 2px solid #559701;
+    box-sizing: border-box;
+    background: white;
+    color:  #559701;
+}
+
+
+/* css styling for page counter */
+#pagenum {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 30vw;
+    height: 5vh;
+    background-color: white;
+
+}
+
+.circle {
+    margin: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: #E1E1E1;
+    border-radius:  12px;
+}
+
+#selected {
+    background-color: #559701;
+}
+
+
+
+
+h1 { 
+    margin: 0px 0px 20px 0px;
+    font-family: Houschka Rounded;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+h2 { 
+    margin: 0px 0px 15px 0px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+
+main section p {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+
+
+/* css styling for intro image grid */
+
+#images {
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    background-image: linear-gradient(red, yellow); /* delete later, need for now in order to make sure something is there */
+
+} 
+
+#introimg {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b" "c d";
+
+    
+}
+
+#largeimg { 
+    display:flex;
+    background-color: #559701;
+
+    width: 70vw;
+    height: 100vh;
+}
+
+#largeimg img { 
+    position: absolute;
+    width: 70vw;
+    height: 100vh; 
+}
+
+.cookieimg {
+    border:none;
+}
+
+#cookie1{
+    grid-area: a;
+    background-color: blue;
+}
+
+#cookie2{
+    grid-area: b;
+    background-color: purple;
+}
+
+#cookie3{
+    grid-area: c;
+    background-color: pink;
+}
+
+#cookie4{
+    grid-area: d;
+    background-color: maroon;
+}
+
+
+
+/* overlays */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    animation: fadeout 2s;
+
+}
+
+.showing {
+    visibility: showing;
+    opacity: 1;
+    width: 70vw;
+    height: 100vh;
+
+}

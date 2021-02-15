@@ -4,38 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio 2: Every Picture</title>
-
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/ozx8iqj.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dyd4ovl.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <main>
+    <main id="pages">
     <!-- The main text and sidebar will go here -->
+        <section class="cookietext" id="introsection">
+            <h2>my life in</h2>
+            <h1>Cookies</h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Pellentesque viverra ipsum ligula, in bibendum lacus fringilla
+                vel. Curabitur varius augue et nibh eleifend, a aliquam risus 
+                convallis. 
+            </p>
+        </section>
+
+        <section class="cookietext" id="sect1">
+            <h1>Snicker<br>doodle</h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Pellentesque viverra ipsum ligula, in bibendum lacus fringilla
+                vel. Curabitur varius augue et nibh eleifend, a aliquam risus 
+                convallis.  
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Pellentesque viverra ipsum ligula, in bibendum lacus fringilla
+                vel. Curabitur varius augue et nibh eleifend, a aliquam risus 
+                convallis.  
+            </p>
+
+            <div class="buttons"> 
+                <button class="mainmenubutton">Back to main</button>
+            </div>
+
+        </section>
+
+        <section class="cookietext" id="sect2">
+            <h1>Chocolate<br>chip</h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Pellentesque viverra ipsum ligula, in bibendum lacus fringilla
+                vel. Curabitur varius augue et nibh eleifend, a aliquam risus 
+                convallis.  
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Pellentesque viverra ipsum ligula, in bibendum lacus fringilla
+                vel. Curabitur varius augue et nibh eleifend, a aliquam risus 
+                convallis.  
+            </p>
+
+            <div class="buttons"> 
+                <button class="mainmenubutton">Back to main</button>
+            </div>
+        </section>
+
+        <section class="cookietext" id="sect3">
+            <h1>Matcha <br>Chip</h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Pellentesque viverra ipsum ligula, in bibendum lacus fringilla
+                vel. Curabitur varius augue et nibh eleifend, a aliquam risus 
+                convallis.  
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Pellentesque viverra ipsum ligula, in bibendum lacus fringilla
+                vel. Curabitur varius augue et nibh eleifend, a aliquam risus 
+                convallis.  
+            </p>
+
+            <div class="buttons"> 
+                <button class="mainmenubutton">Back to main</button>
+            </div>
+        </section>
+
+        <section class="cookietext" id="sect4">
+            <h1>Lemon<br>Crinkle</h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Pellentesque viverra ipsum ligula, in bibendum lacus fringilla
+                vel. Curabitur varius augue et nibh eleifend, a aliquam risus 
+                convallis.  
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Pellentesque viverra ipsum ligula, in bibendum lacus fringilla
+                vel. Curabitur varius augue et nibh eleifend, a aliquam risus 
+                convallis.  
+            </p>
+
+            <div class="buttons"> 
+                <button class="mainmenubutton">Back to main</button>
+            </div>
+        </section>
+
     </main>
 
-    <section>
-    <!-- This is where the four images will go 
-    each image will open an overlay to a different page
-    can also trigger by scrolling on main 
-    -->
+    <!-- This is the page / slide number indicator -->
+    <div id="pagenum"> 
+        <div class="circle" id="selected"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>    
+        <div class="circle"></div>            
+    </div>
 
-        <div class=cookieimg id="cookie1"></div>
-        <div class=cookieimg id="cookie2"></div>
-        <div class=cookieimg id="cookie3"></div>
-        <div class=cookieimg id="cookie4"></div>
+
+    <section id="images" >
+        <section class="showing" id="introimg">
+        <!-- This is where the four images will go 
+        each image will open an overlay to a different page
+        can also trigger by scrolling on main 
+        -->
+            <a href="#sect1" class=cookieimg id="cookie1"></a>
+            <a href="#sect2" class="cookieimg" id="cookie2"></a>
+            <a href="#sect3" class="cookieimg" id="cookie3"></a>
+            <a href="#sect4" class="cookieimg" id="cookie4"></a>
+        </section>
+
+
+        <!-- The overlays for the images are down here, but 
+        i may change to the scrolling animation we saw in class 
+        depending on if it works better for my vision-->
+        <section  class="hidden" id="largeimg">
+            <img src="#" alt="cookie" >
+        </section> 
+
     </section>
-
-
-    <!-- The overlays for the text are down here, but 
-    i may change to the scrolling animation we saw in class 
-    depending on if it works better for my vision-->
-    <section class=overlay id=ol4></section>
-    <section class=overlay id=ol4></section>
-    <section class=overlay id=ol4></section>
-    <section class=overlay id=ol4></section>
  
 </body>
 </html>
