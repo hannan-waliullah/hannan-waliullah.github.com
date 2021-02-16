@@ -1,5 +1,6 @@
 (function () {
     'use strict'
+    console.log("reading js");
 
 
     let currpage = 0;
@@ -52,7 +53,7 @@
             largeimg.className = "showing";
 
             // add image 
-            var newSlide = document.createElement('img');
+            const newSlide = document.createElement('img');
             newSlide.src = `images/${myimages[currpage-1]}`;
             newSlide.className = "showing";
             //largeimg.id = "fadeinimg"; // also add in fadeinimg

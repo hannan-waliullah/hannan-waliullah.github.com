@@ -177,7 +177,7 @@ main section strong {
 }
 
 #introimg a:hover{
-    opacity: 60%;
+    opacity: 80%;
 }
 
 #largeimg { 
@@ -192,7 +192,7 @@ main section strong {
 
 #largeimg img { 
     position: absolute;
-    width: 70vw;
+    width: auto;
     height: 100vh; 
 }
 
