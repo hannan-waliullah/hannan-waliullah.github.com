@@ -9,6 +9,7 @@ main {
     position: fixed;
 
 
+
     /* snap scrolling settings for a smoother ux */
     overflow: scroll;
     scroll-snap-points-y: repeat(100vh);
@@ -50,6 +51,13 @@ main section {
     color:  #559701;
 }
 
+.mainmenubutton:hover{
+    background-color:  #559701;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* css styling for page counter */
 #pagenum {
@@ -76,8 +84,14 @@ main section {
 
 #selected {
     background-color: #559701;
+    animation: colorin 0.5s;
 }
 
+#unselected {
+    background-color: #E1E1E1;
+    animation: colorout 0.5s;
+
+}
 
 
 
@@ -88,6 +102,7 @@ h1 {
     font-weight: 800;
     font-size: 60px;
     line-height: 72px;
+    color: #559701;
 }
 
 h2 { 
@@ -108,18 +123,46 @@ main section p {
     line-height: 25px;
 }
 
+main section strong {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #4e4e4e;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.green {
+    color: #559701
+}
+
+#chev {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce{
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-20px); }
+        100% { transform: translateY(0); }
+}
+
 
 
 
 /* css styling for intro image grid */
 
 #images {
-    position:fixed;
+    position: absolute;
+    overflow: hidden;
     top: 0;
     right: 0;
     width: 70vw;
     height: 100vh;
-    background-image: linear-gradient(red, yellow); /* delete later, need for now in order to make sure something is there */
+    border-left: 12px solid #559701;
 
 } 
 
@@ -128,12 +171,19 @@ main section p {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "a b" "c d";
+    z-index: -1;
 
     
 }
 
+#introimg a:hover{
+    opacity: 60%;
+}
+
 #largeimg { 
-    display:flex;
+    position:absolute;
+    top: 0;
+    right: 0;
     background-color: #559701;
 
     width: 70vw;
@@ -147,38 +197,65 @@ main section p {
 }
 
 .cookieimg {
-    border:none;
+    border: 12px solid #559701;
+    border-right: 0;
+    border-top: 0;
+
+
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 #cookie1{
     grid-area: a;
-    background-color: blue;
+    background-image: url(images/cookie1.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    border-left: 0;
 }
 
 #cookie2{
     grid-area: b;
-    background-color: purple;
+
+    background-image: url(images/cookie2.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
 }
 
 #cookie3{
     grid-area: c;
-    background-color: pink;
+    border-bottom: 0;
+    border-left:0;
+
+    background-image: url(images/cookie3.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
 }
 
 #cookie4{
     grid-area: d;
-    background-color: maroon;
+    border-bottom: 0;
+    background-image: url(images/cookie4.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
 }
 
 
 
 /* overlays */
 .hidden {
-    visibility: hidden;
+    /* visibility: hidden; */
     opacity: 0;
-    height: 0;
-    width: 0;
-    animation: fadeout 2s;
+    width: 70vw;
+    height: 100vh;
+    animation: fadeout 4s;
+    z-index: -1;
+
 
 }
 
@@ -187,5 +264,43 @@ main section p {
     opacity: 1;
     width: 70vw;
     height: 100vh;
+    animation: fadein 2s;
+    z-index: 1;
 
+}
+
+
+/* animations are all here */
+@keyframes colorin {
+    from {
+        background-color: #E1E1E1;
+    } to {
+        background-color: #559701;
+    }
+}
+
+@keyframes colorout {
+    from {
+        background-color: #559701;
+    } to {
+        background-color: #E1E1E1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+
+    } 100% {
+        opacity: 0;
+
+    }
 }

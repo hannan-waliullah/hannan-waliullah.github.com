@@ -23,6 +23,7 @@
     // function changes the image and page number based on scroll position of post
     document.getElementById("pages").addEventListener('scroll', getPage)
 
+
     
     // function to get top of each "page"
     function resetPagePosition() {
@@ -53,8 +54,8 @@
             // add image 
             var newSlide = document.createElement('img');
             newSlide.src = `images/${myimages[currpage-1]}`;
-            largeimg.className = "showing";
-            //newSlide.className = "fadeinimg"; // also add in fadeinimg
+            newSlide.className = "showing";
+            //largeimg.id = "fadeinimg"; // also add in fadeinimg
             largeimg.appendChild(newSlide);
 
             if (largeimg.children.length > 2) {
@@ -113,7 +114,6 @@
     // function to get page and change image 
     function getPage() {
         let pageTop = document.getElementById("pages").scrollTop;
-        console.log("pagetop:", pageTop);
     
 
         if(pageTop + 150 >= slideTops[currpage+1]) {
@@ -131,18 +131,19 @@
         if (currpage != prevpage) {
 
             changePicture(currpage); //define this function later to change the main pic
-            changePageNum(currpage);
+            changePageNum(currpage, prevpage);
             
             prevpage = currpage;
         }
 
     }
 
-    function changePageNum(currpage) {
+    function changePageNum(currpage, prevpage) {
         dots.forEach(function(eachDot) {
             eachDot.removeAttribute('id');
         })
-
+        // change color for unselected back to normal
+        dots[prevpage].id = "unselected"
         // change color for currpage
         dots[currpage].id = "selected";
     }
