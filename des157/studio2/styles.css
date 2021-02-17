@@ -1,6 +1,9 @@
 
 /* css styling for main content */ 
-
+body {
+    min-width: 1358px;
+    min-height: 786px;
+}
 
 main { 
     background-color: white;
@@ -173,13 +176,13 @@ main section strong {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30%;
-    animation: bounce 2s infinite ease-in-out;
+    margin-top: 10%;
+    animation: bounce 2s infinite ease-in-out; 
 }
 
 @keyframes bounce{
         0%   { transform: translateY(0); }
-        50%  { transform: translateY(-20px); }
+        50%  { transform: translateY(-10px); }
         100% { transform: translateY(0); }
 }
 
