@@ -10,9 +10,7 @@ main {
 
     /* snap scrolling settings for a smoother ux */
     overflow: scroll;
-    scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
-    scroll-snap-type: mandatory;
 }
 
 
@@ -295,7 +293,7 @@ main section strong {
 }
 
 .showing {
-    visibility: showing;
+    visibility: visible;
     opacity: 1;
     width: 70vw;
     height: 100vh;
