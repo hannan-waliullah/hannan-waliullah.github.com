@@ -17,7 +17,6 @@
 
     console.log(currpage);
 
-
     // get slide tops 
     resetPagePosition();
 
@@ -131,7 +130,7 @@
 
         if (currpage != prevpage) {
 
-            changePicture(currpage); //define this function later to change the main pic
+            changePicture(currpage);
             changePageNum(currpage, prevpage);
             
             prevpage = currpage;
@@ -139,6 +138,7 @@
 
     }
 
+    // function to change dots 
     function changePageNum(currpage, prevpage) {
         dots.forEach(function(eachDot) {
             eachDot.removeAttribute('id');
@@ -148,7 +148,6 @@
         // change color for currpage
         dots[currpage].id = "selected";
     }
-
 
 
 })();

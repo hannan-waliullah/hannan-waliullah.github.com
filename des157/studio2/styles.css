@@ -8,8 +8,6 @@ main {
     width: 30vw;
     position: fixed;
 
-
-
     /* snap scrolling settings for a smoother ux */
     overflow: scroll;
     scroll-snap-points-y: repeat(100vh);
@@ -25,9 +23,9 @@ main section {
     scroll-snap-align: start;
 }
 
-.cookietext div{
+.buttons{
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: calc(50% - 75px);
 
     font-family: Proxima Nova;
@@ -69,10 +67,12 @@ main section {
     left: 0;
     bottom: 0;
     width: 30vw;
-    height: 5vh;
+    height: 10vh;
     background-color: white;
 
 }
+
+
 
 .circle {
     margin: 8px;
@@ -93,7 +93,42 @@ main section {
 
 }
 
+/* footer styling */
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 30vw;
+    height: 5vh;
+}
+
+footer a {
+    text-decoration: none;
+    background-color: rgba(0, 128, 0, 0.507);
+    margin: 0px 5px 0px 5px;
+    padding: 5px;
+    color: white;
+
+    font-family: Proxima Nova;
+    font-style:normal;
+    font-weight: 800;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    border-radius: 8px;
+}
+
+
+footer a:hover {
+    border: 2px solid #559701;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: white;
+    color:  #559701;
+}
 
 h1 { 
     margin: 0px 0px 20px 0px;
