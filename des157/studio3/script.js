@@ -205,12 +205,16 @@
 
 
     function throwDice(){
-        actionArea.html = '';
+
+        game.html = '';
         gameData.roll1= Math.floor(Math.random() * 6) + 1; //use ceil could result in zero
         gameData.roll2= Math.floor(Math.random() * 6) + 1;
 
+        if (gameData.index == 1){
+            game.innerHTML = `<p>Computer's turn </p>`;
+        }
 
-        game.innerHTML = `<img id="die1" src="${gameData.dice[gameData.roll1-1]}" width=100px>
+        game.innerHTML += `<img id="die1" src="${gameData.dice[gameData.roll1-1]}" width=100px>
                             <img id="die2" src="${gameData.dice[gameData.roll2-1]}" width=100px>`
         gameData.rollSum = gameData.roll1 + gameData.roll2;
 
@@ -250,7 +254,7 @@
 
             // if CPU, do CPU turn, else do human turn
                 if (gameData.index == 1){
-                    game.innerHTML += "<p>CPU's turn! please wait</p>";
+                    game.innerHTML += "<p>Please wait</p>";
                     setTimeout(setUpTurn, 1000);
                 } else { 
                     actionArea.innerHTML = '<button id="rollagain"> Roll again </button> or <button id="pass">Pass</button>';
