@@ -1,0 +1,110 @@
+body {
+    max-width: 900px;
+    margin: auto;
+    font-family: 'proxima-nova', sans-serif;
+    padding: 100px 20% 2% 20%;
+}
+
+footer {
+    margin:auto;
+    margin-top: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+footer a {
+    padding: 10px;
+}
+
+.date {
+    font-weight: 100;
+    font-style: italic;
+    color:rgb(90, 90, 90);
+}
+
+a {
+    background-color:  #bba4f0; 
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    padding:  8px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+img { 
+    padding-top: 30px;
+
+    filter: drop-shadow(0 0 0.2rem rgb(92, 92, 92));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+figcaption {
+    padding-top: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: rgb(177, 177, 177);
+
+}
+
+a:hover {
+    background-color: rgb(224, 224, 224);
+    color: #7153b8;
+}
+
+.response { 
+    max-width: 600px;
+
+    padding: 60px 0px 60px 0px;
+}
+
+.journaltext { 
+
+    font-family: linotype-sabon, sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    color: rgb(59, 59, 59);
+    
+}
+
+h1 { 
+    font-family: linotype-sabon, sans-serif;
+    color: rgb(59, 59, 59);
+    font-size: 60px;  
+}
+
+h2 {
+    color: rgb(59, 59, 59);
+    font-size: 25px;
+    margin: 40px 0 10px 0; 
+    padding: 0;
+    color: #26007e
+    
+}
+
+
+
+hr{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#more{
+    font-size: 40px;
+    font-family: linotype-sabon, sans-serif;
+    padding-top: 30px;
+    line-height: 10px;
+}
+

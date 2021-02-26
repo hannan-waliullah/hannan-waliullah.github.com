@@ -1,0 +1,432 @@
+html {
+    background-color: #333;
+}
+
+/************** CSS for all of the containers *******************/
+body {
+    position: relative;
+    width: 1366px;
+    height: 768px;
+    margin: auto;
+    background-color: #604D99;
+    /*font */
+    font-family: Houschka Rounded;
+    font-style: normal;
+    color: white;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 45px;
+    width: 1366px;
+    left: 0px;
+    top: 727px;
+    overflow: hidden;
+    
+}
+
+footer a {
+    color: white;
+    font-family: "Proxima Nova";
+    font-size: 11px ;
+    font-weight: normal;
+    height: 13px;
+    padding: 6px;
+    margin: 0px 6px 2px 6px;
+    text-decoration: none; 
+    border-radius: 10px;
+    border-color: white;
+}
+
+#ov-darken {
+    position: absolute;
+    opacity: 0.9;
+    width: 1366px;
+    height: 768px;
+    background-color: #161616;
+}
+
+
+h1{
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h3 {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.19em;
+    opacity: 0.8;
+}
+
+p {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: normal;
+
+}
+
+button {
+    font-weight: 800;
+    font-size: 24px;
+    color: white;
+    background-color: #604D99;
+    padding: 15px 30px;
+    border: 4px solid #604D99;
+    box-sizing: border-box;
+    border-radius: 55px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button:hover {
+    background-color:rgba(253, 66, 66, 0.707)
+}
+
+/* overlay hiding/ showing */
+.hidden {
+    visibility: hidden;
+    opacity:0;
+}
+
+.showing {
+    visibility:visible;
+}
+
+#cards {
+    position: absolute;
+    width: 1104px;
+    height: 535px;
+    left: 131px;
+    top: 117px;
+    padding:0;
+    margin:0;
+    background-color: red;
+
+    border-radius: 30px;
+}
+
+#player1 {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    left: 170px;
+    top: 55px;
+
+    /* background: #4BA9D4; */
+    border-radius: 10px;
+}
+
+#player2 {
+    position: absolute;
+    
+    width: 189px;
+    height: 95px;
+    left: 495px;
+    top: 55px;
+
+    background: #DF5E81;
+    border-radius: 10px;
+}
+
+
+#actionscontainer {
+    position: absolute;
+    width: 442px;
+    height: 155px;
+    left: 741px;
+    top: 560px;
+
+    background: #A9DAE9;
+    border-radius: 10px;
+}
+
+/************** css for the player info *******************/
+
+/* player 1*/
+#avatar1{ 
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    top: 25px;
+    left: 41px;
+}
+
+#playerinfo1 {
+    position:absolute;
+    left: 170px;
+    top: 30px;
+    margin: 0;
+}
+
+/* player 2*/
+#avatar2{ 
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    top: 16px;
+    left: 26px;
+}
+
+#playerinfo2 {
+    position:absolute;
+    left: 110px;
+    top: 18px;
+    line-height: 8px;
+}
+
+/* text sizing */
+#playerinfo1 p, #player2 p {
+    margin: 0;
+    padding:0;
+    line-height: 0px;
+    line-height: calc(1em + 8px);
+}
+
+#player2 p {
+    line-height: calc(1em + 4px);
+}
+
+#u-who{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    letter-spacing: 0.185em;
+    color: rgba(255, 255, 255, 0.47);
+    
+}
+
+#u-char{
+    font-weight: 800;
+    font-size: 24px;     
+}
+
+#u-points{
+    font-weight: bold;
+    font-size: 48px;
+    opacity: 0.6;
+}
+
+
+#c-who{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    letter-spacing: 0.185em;
+    color: rgba(255, 255, 255, 0.47);
+}
+
+#c-char{
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#c-points{
+    font-weight: bold;
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+/************** css for the player action *******************/
+
+
+
+/* button { 
+    padding: 10px;
+} */
+
+/* div {
+    padding: 20px;
+} */
+
+/************ css for the overlays *************************/
+
+/* overlay general */
+.ov {
+    position: absolute;
+    width: 576px;
+    height: 330px;
+    left: 395px;
+    top: 206px;
+
+    background: #BDADD0;
+    box-shadow: 0px 0px 37px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+
+    z-index: 1;
+
+}
+
+.ov h2{
+    margin-top: 51px;
+    margin-left: 61px;
+}
+
+
+/* intro overlay */
+#intro div {
+
+    margin-top: 85px;
+    margin-left: 90px;
+}
+
+#intro h3{
+    line-height: 10px;
+
+}
+
+#intro .instructions {
+    background-color: #b6a8c700;
+
+}
+
+.instructions:hover {
+    background-color:rgba(253, 66, 66, 0.707)
+}
+
+/* instructions overlay */
+
+#instructionsov {
+    top: 180px;
+
+    width: 576px;
+    height: 400px;
+}
+
+#instructionsov div{
+    margin: 40px;
+}
+
+#instructionsov div p{
+    font-size: 16px;
+
+}
+
+
+/*character selection overlay */
+#character{
+    padding:0;
+}
+
+#character button {
+
+    border:none;
+    border-radius: 46px;
+    margin:0;
+    padding:0;
+    background: transparent;
+    width:92px;
+    height:92px;
+    color:white;
+    margin-left:33px;
+
+}
+
+#character button p{
+    font-family: Proxima Nova;
+    font-style:normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.19em;
+    
+    color: #FFFFFF;
+    
+    opacity: 0.8;
+
+}
+/* #character button:focus {
+    outline: none;
+    box-shadow: none;
+
+} */
+
+/*ending overlay */
+
+#endingcontainer {
+    height: 300px
+}
+#ending {
+    margin: 40px;
+    margin-top: 80px;    
+}
+
+#ending h2{
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+#quit{
+    position: absolute;
+    width: 154px;
+    height: 43px;
+    left: 136px;
+    top: 672px;
+
+    background: #DB385B;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    margin:0;
+    padding:0;
+}
+
+/**************** actual game ***************/
+#game {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 1104px;
+    text-align: center;
+
+    margin-top: 10%;
+    font-size: 21px;
+}
+
+#gamecontrol {
+    padding-left: 10%;
+    padding-top: 4%
+}
+#character button img{
+    width:92px;
+    height:92px;
+}
+
+#actions {
+    padding: 10%;
+}
+
+/* #gamecontrol, #score {
+    background-color: aliceblue;
+} */

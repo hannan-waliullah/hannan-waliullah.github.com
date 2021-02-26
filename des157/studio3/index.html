@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+    <link rel="stylesheet" href="https://use.typekit.net/dyd4ovl.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <div id="cards">
+        <img src="images/woodbackground.svg" alt="background">
+        <div id="game"></div>
+    </div>
+
+
+
+    <div id="actionscontainer" class="hidden">
+        <div  id="actions" ></div>
+    </div>
+
+    <div class=hidden id="player1">
+        <div id="avatar1"></div>
+        <div id="playerinfo1">
+            <p id="u-who">YOU</p>
+            <p id="u-char">Cow</p>
+            <p id="u-points">--</p>
+        </div>
+    </div>
+
+    <div class="hidden" id="player2">
+        <div id="avatar2"></div>
+        <div id="playerinfo2">
+            <p id="c-who">CPU</p>
+            <p id="c-char">Piggy</p>
+            <p id="c-points">--</p>
+        </div>
+    </div>
+
+    <div id="ov-darken"></div>
+
+    <button class="hidden" id="quit">quit game</button>
+
+    
+
+    <!-- When you open the page, this is the intro overlay-->
+    <section id="intro" class="ov showing">
+        <div>
+            <h3>LET'S PLAY</h3>
+            <h1>PIG 2.0</h1>
+            <button class="instructions">instructions</button>
+            <button class="play">play</button>    
+        </div>
+    </section>
+
+    <section id="instructionsov" class="ov hidden">
+        <div>
+            <p>There are two players, one human and one computer .The player whose turn it is rolls the dice. The total of the roll is added 
+                to the current player's score, unless either die comes up as a "one". If this happens, this player's 
+                turn is over, and it is the other player’s turn. 
+            </p>
+
+            <p>After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current
+                 player feels that luck is running thin, they can pass to the other player. The first player to get <strong>30 points </strong>
+                 or higher wins.</p>
+
+            <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+            <button class="play">play</button>    
+        </div>
+    </section>
+
+    <section id="character" class="ov hidden">
+        <h2>choose your character</h2>
+        <button id="pig"><img src="images/pig.svg" alt="pig"><p>PIG</p></button>
+        <button id="chicken"><img src="images/chicken.svg" alt="chicken"><p>CHICKEN</p></button>
+        <button id="dog"><img src="images/dog.svg" alt="dog"><p>DOG</p></button>
+        <button id="cow"><img src="images/cow.svg" alt="pig"><p>COW</p></button>
+    </section>
+
+    <section id="endingcontainer" class= "ov hidden">
+        <div id="ending">
+        </div> 
+    </section>
+
+    <footer>
+        <a href="sounds.html">sounds credit</a>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+    
+</body>
+</html>
