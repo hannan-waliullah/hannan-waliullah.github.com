@@ -349,9 +349,6 @@ button:hover {
     color:white;
     margin-left:33px;
 
-}
-
-#character button p{
     font-family: Proxima Nova;
     font-style:normal;
     font-weight: 900;
@@ -359,10 +356,8 @@ button:hover {
     line-height: 17px;
     letter-spacing: 0.19em;
     
-    color: #FFFFFF;
+    color: #ffffffc2;
     
-    opacity: 0.8;
-
 }
 /* #character button:focus {
     outline: none;
