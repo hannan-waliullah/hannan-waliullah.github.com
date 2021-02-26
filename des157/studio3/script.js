@@ -8,8 +8,8 @@
     const actionArea = document.getElementById('actions');
 
     /*sounds */
-    const dicesound = new Audio("sounds/dice.mp3")
-    const moosound = new Audio("sounds/moo.mp3") 
+    const dicesound = new Audio("media/dice.mp3")
+    const moosound = new Audio("media/moo.mp3") 
 
     /* game data */
     const gameData = {
