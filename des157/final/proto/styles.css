@@ -1,0 +1,68 @@
+/* body settings */
+/* may change width to be responsive later later */
+
+html{ 
+    background-color: black;
+}
+
+body{
+    background: linear-gradient(180deg, #0997FF 0%, #001427 100%);
+    margin: auto;
+    padding: 0;
+    position: relative;;
+    top:0;
+    padding: 0;
+
+    width: 1366px;
+    height: 10000px; /*change this later to match max depth */
+}
+
+
+/*styling for sidebar*/
+#sidebar {
+    background-color: none;
+    position: fixed;
+    padding:0;
+    padding-top:0;
+
+    margin:0;
+    width: calc(.3 * 1366px);
+    height: 100%;
+}
+
+/* styling for the main sea thing lol */
+main {
+    position: absolute;
+    padding: 0;
+    margin:0;
+    width: calc(.7 * 1366px);
+    right:0;
+}
+
+.story {
+    position: absolute;
+    padding: 10%;
+}
+
+
+#s1 {
+    top: 2000px;
+}
+
+#s2 {
+    top: 4000px;
+}
+
+#s3 {
+    top: 6000px;
+}
+
+#s4 {
+    top: 8000px;
+}
+
+#s5 {
+    top: 9000px;
+}
+
+
