@@ -1,0 +1,356 @@
+/* body settings */
+/* may change width to be responsive later later */
+
+
+
+html{ 
+    background-color: black;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    color: white;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background: linear-gradient(180deg, #0997FF 0%, #002547 5%, #001427 30%, rgb(0, 0, 0) 100%);
+    margin: auto;
+    padding: 0;
+    position: relative;;
+    top:0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 1366px;
+    height: 50640px; /*change this later to match max depth */
+}
+
+
+/*styling for sidebar*/
+#sidebar {
+    background-color: none;
+    position: fixed;
+    padding:0;
+    padding-top:0;
+
+    margin:0;
+    width: calc(.3 * 1366px);
+    height: 100%;
+}
+
+#stats {
+    position: absolute;
+    width: 212.47px;
+    height: auto;
+    left: 69px;
+    top: 274px;    
+    padding: 10px 10px;
+
+
+    
+
+    background: #BB4567;
+    border-radius: 10px;
+}
+
+#stats p {
+
+
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+
+    color: #FFFFFF;
+}
+
+p#conv-rate {
+    font-weight: normal;
+}
+
+.side-btn {
+    position: absolute;
+    height: auto;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
+
+    font-family: Bebas Neue Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+
+#ff {
+    width: 190px;
+    left: 96px;
+    bottom: 10%;
+    background: #F0A84A;
+    padding: 4px;
+
+
+}
+
+#btt {
+    left: 96px;
+    bottom: 4%;
+    padding: 4px;
+    width: 197px;
+
+
+    border: 2px solid #E9C28F;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* styling for the main sea thing lol */
+main {
+    position: absolute;
+    padding: 0;
+    margin:0;
+    width: calc(.7 * 1366px);
+    right:0;
+}
+
+.dashed-line {
+    height: 50640px;
+    width:2px;
+    /* i used this source to generate a custom dashed line because the default sucks: https://kovart.github.io/dashed-border-generator/ */
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23E9C28FFF' stroke-width='4' stroke-dasharray='10%2c 30' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+#pointer {
+    position: fixed;
+    width: 80.65px;
+    height: 32px;
+    top: 288px;
+    margin-left: 350px;
+}
+
+.story {
+    position: absolute;
+    padding: 10%;
+    width: 500px;
+    height: 750px;
+}
+
+.story h1{
+    font-family: Bebas Neue Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    margin-top:40px;
+    padding-left: 100px;
+}
+
+.story h2 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.4;
+    margin-bottom: 10px;
+
+    color: #FFFFFF;
+}
+
+.story img { 
+    height: 30%;
+    position: absolute;;
+
+    top: 150px;
+}
+
+.story p {
+    padding-left: 100px;
+}
+
+.story div {
+    position: absolute;
+    width: 503px;
+    height: 5px;
+    background: #FFFFFF;
+}
+
+#s1 {
+    top: 200px;
+}
+
+#s2 {
+    top: 2000px;
+}
+
+#s3 {
+    top: 6000px;
+}
+
+#s4 {
+    top: 10000px;
+}
+
+#s5 {
+    top: 20000px;
+}
+
+#s6 {
+    top: 30000px;
+}
+
+#s7 {
+    top: 40000px;
+}
+
+#s8{
+    top: 44740px;
+}
+
+#s9 {
+    top: 49822px;
+}
+
+
+
+
+
+/* styling for footer */
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+footer a { 
+    width: 147px;
+    height: 37px; 
+    padding: 8px;
+    background: #00507C;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-decoration: none;;
+
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+
+}
+
+/* image animations */
+#submarine { 
+    animation: subswim 3s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes subswim { 
+    0% {
+        transform: translate(80px,-0px)
+        rotate(-10deg);
+    }
+
+    50%{
+        transform: translate(88px,8px)
+        rotate(-4deg);
+    }
+
+    100%{
+        transform: translate(80px,0px)
+        rotate(-10deg);
+
+    }
+} 
+
+
+#squid {
+    animation: squid-swim 3s linear infinite;
+    width: auto;
+}
+
+
+@keyframes squid-swim{
+    0% {
+        transform: translate(100px, 500px ) scale(.9) rotate(14deg);
+    } 
+    50%{ 
+        transform:  translate(100px, 500px ) scale(1.3) rotate(8deg);
+    } 
+    100% {
+        transform:  translate(100px, 500px ) scale(.9) rotate(14deg);
+
+    }
+}
+
+#jellyfish {
+    animation: jellyfish-glow 5s ease-in-out infinite;
+
+    transform: translate(-400px, 500px);
+    width:auto;
+}
+
+
+@keyframes jellyfish-glow {
+    0%{ 
+        filter: drop-shadow(0px 0px 10px #fabf717e);
+        transform: translate(-400px, 470px);
+    }
+    50%{ 
+        filter: drop-shadow(0px 0px 30px #fabf7144);
+        transform: translate(-400px, 500px);
+
+    }
+    100%{ 
+        filter: drop-shadow(0px 0px 10px #fabf717e);
+        transform: translate(-400px, 470px);
+
+    }
+}
+
+#viper,#whale,#angler {
+    animation: fish-swim 5s linear infinite;
+}
+
+#viper {
+    top:auto;
+}
+
+
+@keyframes fish-swim {
+    0%{
+        transform: translate(0, 300px);
+    }
+
+    25%{ 
+        transform: translate(150px, 200px);
+    }
+
+    45%{
+        transform: translate(300px, 300px);
+    }
+
+    75% {
+        transform: translate(150px, 200px);
+    }
+
+
+    100% {
+        transform: translate(0, 300px);
+    }
+    
+}
