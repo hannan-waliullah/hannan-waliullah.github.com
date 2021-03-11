@@ -154,11 +154,14 @@ p#conv-rate {
 
 #button-container {
     position: fixed;
-    top: 50%;
+    top: 80%;
     left: 50%;        
 
     display:inline;
     visibility: hidden;
+    border-top: 2px solid #ffffff;
+    box-sizing: border-box;
+    padding: 10px 15px;
 }
 
 .btn {
@@ -171,12 +174,13 @@ p#conv-rate {
     font-weight: 400;
     font-style: normal;
 
+
     text-transform: uppercase;
 
 }
 
 .side {
-    margin: 10px 20px;
+    margin:  20px;
 
     border: 2px solid #ffffff;
     background-color: #69696965;
@@ -228,6 +232,7 @@ main {
     margin:0;
     width: calc(.7 * 1366px);
     right:0;
+    overflow: hidden;
 }
 
 .dashed-line {
@@ -283,8 +288,8 @@ main {
 }
 #arrow {
     position: absolute;
-    left:400px;
-    top: 350px;
+    left:350px;
+    top: 380px;
     animation: bounce 2s infinite ease-in-out; 
 }
 
@@ -308,7 +313,7 @@ main {
 
 #s1 {
     width: 700px;
-    left: -200px;
+    left: -180px;
     top: 200px;
 }
 
@@ -437,13 +442,13 @@ footer a:hover {
 
 @keyframes squid-swim{
     0% {
-        transform: translate(100px, 500px ) scale(.9) rotate(14deg);
+        transform: translate(400px, 200px ) scale(.9) rotate(14deg);
     } 
     50%{ 
-        transform:  translate(100px, 500px ) scale(1.3) rotate(8deg);
+        transform:  translate(400px, 200px ) scale(1.3) rotate(8deg);
     } 
     100% {
-        transform:  translate(100px, 500px ) scale(.9) rotate(14deg);
+        transform:  translate(400px, 200px ) scale(.9) rotate(14deg);
 
     }
 }
@@ -451,7 +456,6 @@ footer a:hover {
 #jellyfish {
     animation: jellyfish-glow 5s ease-in-out infinite;
 
-    transform: translate(-400px, 500px);
     width:auto;
 }
 
@@ -459,49 +463,57 @@ footer a:hover {
 @keyframes jellyfish-glow {
     0%{ 
         filter: drop-shadow(0px 0px 10px #fabf717e);
-        transform: translate(-400px, 470px);
+        transform: translate(0, 200px);
     }
     50%{ 
         filter: drop-shadow(0px 0px 30px #fabf7144);
-        transform: translate(-400px, 500px);
+        transform: translate(0, 200px);
 
     }
     100%{ 
         filter: drop-shadow(0px 0px 10px #fabf717e);
-        transform: translate(-400px, 470px);
+        transform: translate(0, 200px);
 
     }
 }
 
-#viper,#whale,#angler {
+
+#whale{
+    top: 360px;
     animation: fish-swim 5s linear infinite;
+
+}
+
+#angler {
+    top: 390px;
+    animation: jellyfish-glow 5s ease-in-out infinite, fish-swim 5s linear infinite;
 }
 
 #viper {
     top:auto;
+    animation: jellyfish-glow 5s ease-in-out infinite, fish-swim 5s linear infinite;
+
+}
+
+#eel {
+    top: auto;
+    animation: fish-swim 5s linear infinite;
+
 }
 
 
 @keyframes fish-swim {
     0%{
-        transform: translate(0, 300px);
+        transform: translate(0, 0);
     }
 
-    25%{ 
-        transform: translate(150px, 200px);
-    }
 
-    45%{
-        transform: translate(300px, 300px);
+    50%{
+        transform: translate(200px, 0);
     }
-
-    75% {
-        transform: translate(150px, 200px);
-    }
-
 
     100% {
-        transform: translate(0, 300px);
+        transform: translate(0, 0);
     }
     
 }

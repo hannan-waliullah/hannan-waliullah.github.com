@@ -6,7 +6,7 @@
     let convRate = 10;
     let pageIndex = 0;
     const seaOffset = 0; // change later when i know exactly where the "sea level" begins
-    const pointerOffset = 156; // idk why this is LOL;
+    const pointerOffset = 163; // idk why this is LOL;
     const browserHeight = window.innerHeight;//change later to allow for resizing 
     let interfaceVal = 0;
     let firstLoad = 1;
@@ -58,7 +58,7 @@
         // sets scroll property as percentage of page so animation occurs while scrollign
         //console.log(window.pageYOffset / (document.body.offsetHeight - window.innerHeight) * 10);
         pagepercentage = window.pageYOffset / (document.body.offsetHeight - window.innerHeight);
-        document.body.style.setProperty('--scroll', (pagepercentage* 30% 1)); 
+        document.body.style.setProperty('--scroll', (pagepercentage* 10% 1)); 
 
         // hide overlay after certain height
         //TODO; figure out what height that is
@@ -171,16 +171,18 @@
 
         } else {
             document.getElementById("button-container").style.animation = "fade-out 0.3s linear forwards";
+
   
         }
 
         if (pageIndex == storyPages.length - 1) {
             document.getElementById("button-container").style.animation = "fade-in 0.3s linear forwards";
             document.getElementById("ff").style.visibility = "hidden";
+            document.getElementById("side-text").innerHTML = "You've reached the bottom. Again?"
 
         } else { 
             document.getElementById("ff").style.visibility = "visible";
-
+            document.getElementById("side-text").innerHTML = "It's a really long journey..."
         }
     }
 
