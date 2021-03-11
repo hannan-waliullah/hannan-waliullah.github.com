@@ -156,6 +156,7 @@ p#conv-rate {
     left: 50%;        
 
     display:inline;
+    visibility: hidden;
 }
 
 .btn {
