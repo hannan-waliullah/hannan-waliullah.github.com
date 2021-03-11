@@ -180,7 +180,7 @@ p#conv-rate {
 }
 
 .side {
-    margin:  20px;
+    margin-left:  8px;
 
     border: 2px solid #ffffff;
     background-color: #69696965;
@@ -376,17 +376,15 @@ footer {
 footer a { 
     
 
-    left: 96px;
-    margin-left: 10px;
-    padding: 2px;
+    left: 106px;
+    margin-left: 4px;
+    padding: 7px;
     width: 100px;
 
 
     border: 2px solid #E9C28F;
     box-sizing: border-box;
     border-radius: 3px;
-
-    
 
 
 }
@@ -397,14 +395,6 @@ footer a:hover {
     background: #F0A84A;
 }
 
-/* #html-valid {
-    left: 0;
-}
-#css-valid{
-
-    left: 150px; */
-
-/* } */
 
 /* image animations */
 #submarine { 
