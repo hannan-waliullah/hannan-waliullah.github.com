@@ -1,7 +1,4 @@
 (function() {
-
-    alert("Hello! Thanks for testing! \n \n In order to best view the experience, please: \n 1. View in Full-width (I cant guarantee it works otherwise) \n 2. Make notes on the interface \n 3. Pay attention to the scrolling interactions  & animations. \n 4. Test out the buttons! \n \n Have fun!");
-
     'use strict';
     let windowposition; // variable for current middle of page
     let diveHeight;
@@ -139,7 +136,7 @@
     function showInterface () {
         const hiddenItems = document.getElementsByClassName("interfaceItems");
         console.log(hiddenItems);
-        for (i = 0; i < hiddenItems.length; i++){
+        for (let i = 0; i < hiddenItems.length; i++){
             console.log('fade-in');
             console.log(hiddenItems[i].id);
             //hiddenItems[i].style.visibility = "visible";
@@ -151,7 +148,7 @@
 
     function hideInterface () {
         const hiddenItems = document.getElementsByClassName("interfaceItems");
-        for (i = 0; i < hiddenItems.length; i++){
+        for (let i = 0; i < hiddenItems.length; i++){
             console.log('fadeout');
             hiddenItems[i].style.animation = "fade-out 0.3s linear forwards";
 

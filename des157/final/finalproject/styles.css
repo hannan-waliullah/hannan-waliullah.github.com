@@ -25,6 +25,8 @@ body{
     overflow-x: hidden;
     width: 1366px;
     height: 50640px; /*change this later to match max depth */
+
+    animation: fade-in 0.3s linear forwards;
 }
 
 
@@ -280,7 +282,7 @@ main {
 #arrow {
     position: absolute;
     left:400px;
-    top: auto;
+    top: 350px;
     animation: bounce 2s infinite ease-in-out; 
 }
 
