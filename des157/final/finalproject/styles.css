@@ -5,8 +5,8 @@
 
 html{ 
     background-color: black;
-    font-family: Proxima Nova;
-    font-style: normal;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;    
     font-weight: 400;
     font-size: 21px;
     line-height: 32px;
@@ -167,8 +167,8 @@ p#conv-rate {
     color: white;
     text-align: center;
     
-
-    font-family: Bebas Neue Pro;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 400;
     font-style: normal;
 
     text-transform: uppercase;
@@ -253,8 +253,8 @@ main {
 }
 
 .story h1{
-    font-family: Bebas Neue Pro;
-    font-style: normal;
+    font-family: bebas-neue-pro, sans-serif;
+    font-style: normal;    
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
@@ -278,6 +278,8 @@ main {
     height: 30%;
     position: absolute;
     top: 150px;
+
+    
 }
 #arrow {
     position: absolute;
