@@ -5,9 +5,7 @@
 
 html{ 
     background-color: black;
-
     scroll-behavior: smooth;
-
 }
 
 body{
@@ -55,9 +53,6 @@ body{
     position: absolute;
     top: 100px;
     left: 80px;
-    transform: translate(-30deg);
-
-
     animation: sub-swim 3s linear infinite;
 }
 
@@ -108,7 +103,6 @@ body{
 
 /*styling for sidebar*/
 #sidebar {
-    background-color: none;
     position: fixed;
     padding:0;
     padding-top:0;
@@ -182,7 +176,6 @@ p#conv-rate {
 }
 
 .side {
-    margin-left:  px;
 
     border: 2px solid #ffffff;
     background-color: #69696965;
@@ -360,7 +353,6 @@ main {
 /* styling for footer */
 footer {
 
-    background-color: none;
     position: fixed;
     padding:0;
     display:inline;
@@ -403,7 +395,7 @@ footer a:hover {
 #submarine { 
     animation: subswim 3s linear infinite;
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -3s);
+    animation-delay: calc(var(--scroll) *calc(-3s));
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }

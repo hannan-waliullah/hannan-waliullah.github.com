@@ -116,15 +116,15 @@
             document.getElementById("button-container").style.animation = "fade-out 0.3s linear forwards";
         }
 
-        // if (pageIndex == storyPages.length - 1) {
-        //     document.getElementById("button-container").style.animation = "fade-in 0.3s linear forwards";
-        //     document.getElementById("ff").style.visibility = "hidden";
-        //     document.getElementById("side-text").innerHTML = "You've reached the bottom. Again?"
+        if (pageIndex == storyPages.length - 1) {
+            document.getElementById("button-container").style.animation = "fade-in 0.3s linear forwards";
+            document.getElementById("ff").style.visibility = "hidden";
+            document.getElementById("side-text").innerHTML = "The End. Again?"
 
-        // } else { 
-        //     document.getElementById("ff").style.visibility = "visible";
-        //     document.getElementById("side-text").innerHTML = "It's a really long journey..."
-        // }
+        } else { 
+            document.getElementById("ff").style.visibility = "visible";
+            document.getElementById("side-text").innerHTML = "It's a really long journey..."
+        }
     }
 
     
