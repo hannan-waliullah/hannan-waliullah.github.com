@@ -395,7 +395,7 @@ footer a:hover {
 #submarine { 
     animation: subswim 3s linear infinite;
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) *calc(-3s));
+    animation-delay: calc(var(--scroll) *-3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
