@@ -284,6 +284,7 @@ main {
 }
 #arrow {
     position: absolute;
+    width: 80px;
     left:350px;
     top: 380px;
     animation: bounce 2s infinite ease-in-out; 
